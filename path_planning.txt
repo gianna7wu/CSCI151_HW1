@@ -1,0 +1,23 @@
+Gianna Wu 
+CSCI 151 - Artificial Intelligence 
+9-18-18 
+
+1. A graph is a set of vertices and edges, where the edges connect the vertices (some, not all). There are undirected and directed graphs; directed graphs mean that each edge has a direction. For example, in a directed graph, even though an edge from a to b may exist, it does not necessarily mean an edge from b to a exists. In an undirected graph, however, an edge between a and b means that the edge can go in either direction. You can represent a graph using either an adjacency list or an adjacency matrix. An adjacency list contains a tuple of the vertex and its neighbors. An adjacency matrix is a n-by-n matrix, where n is the number of nodes. If matrix[a][b] = 1, where a,b < n, means that there is an edge from a to b. Likewise, matrix[a][b] = 0, then there does not exist an edge from a to b. We note that for undirected graphs, the matrix would be symmetrical. That is, matrix[a][b] = matrix[b][a].  
+
+2. I have encountered Breadth-first search, Dijkstra's algorithm, and A*. 
+
+3. Graph search can be useful for social media networks, like Facebook. You can analyze the graph to see who is connected with whom and perhaps use this to make friend recommendations. 
+
+4. I think using an adjacency matrix would be the most efficient for a four-connected graph.  
+
+5. terrain.txt shows a 10 by 12-sized array of utf-8 characters (emojis). load-map takes terrain.txt, looks at each line of the text file, removes any trailing white spaces (function of rstrip()), and puts that into Map.
+
+6. If we wanted to get a specific spot, we would write Map[x][y] for coordinates x and y.  
+
+7. The neighbors of the cell (3,3) are (2, 3), (4, 3), (3, 2), and (3, 4). In general, the neighbors for any coordinate pair (assuming (x,y) are not lying on the boundaries) are: (x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1). 
+
+8. Breadth-first search and Dijkstra's algorithm may be considered uninformed because neither algorithm makes a guess for which vertex is contained in the shortest path; it doesn't use any additional knowledge, like a vertex's distance from the target vertex. In other words, these algorithms use a brute-force attempt to find the shortest path. 
+
+9. In breadth-first search, the newly expanded nodes go at the back of the open list. The abstract data type where the "oldest" node comes out first is called a Queue. 
+
+10. 
